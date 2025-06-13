@@ -1,0 +1,105 @@
+import sum.kern.*;
+/**
+ * @LuisDaSilveiraMarques
+ * @1.1
+ */
+public class Güt
+{
+    // Objekte
+    Bildschirm derBildschirm;
+    Buntstift meinStift;
+
+    // Konstruktor
+    public Güt()
+    {
+        derBildschirm = new Bildschirm(600,600);
+        meinStift = new Buntstift();
+    }
+
+    // Dienste
+    public void fuehreAus()
+    {
+       meinStift.setzeLinienBreite(2);
+       meinStift.bewegeBis(100,100);
+       
+       //PufferLinks
+       meinStift.dreheUm(-90);
+       meinStift.hoch();
+       meinStift.bewegeUm(4);
+       meinStift.runter();
+       meinStift.bewegeUm(6);
+       meinStift.bewegeUm(-3);
+       meinStift.dreheUm(90);
+       meinStift.bewegeUm(5);
+       
+       //Hauptkörper 1
+       meinStift.dreheUm(-90);
+       meinStift.bewegeUm(5);
+       meinStift.dreheUm(90);
+       meinStift.bewegeUm(100);
+       meinStift.dreheUm(90);
+       meinStift.bewegeUm(5);
+       
+       // PufferRechts
+       meinStift.dreheUm(-90);
+       meinStift.bewegeUm(5);
+       meinStift.dreheUm(90);
+       meinStift.bewegeUm(3);
+       meinStift.bewegeUm(-6);
+       meinStift.bewegeUm(3);
+       
+       //Hauptkörper 2
+       meinStift.dreheUm(90);
+       meinStift.bewegeUm(5);
+       meinStift.dreheUm(-90);
+       meinStift.bewegeUm(10);
+       meinStift.dreheUm(90);
+       meinStift.bewegeUm(2);
+       
+       //Trennkörper1
+       meinStift.dreheUm(-90);
+       meinStift.bewegeUm(40);
+       meinStift.dreheUm(90);
+       meinStift.bewegeUm(5);
+       meinStift.dreheUm(90);
+       meinStift.bewegeUm(40);
+       
+       //Hauptkörper 3
+       meinStift.dreheUm(-90);
+       meinStift.bewegeUm(86);
+       
+       //Trennkörper1
+       meinStift.dreheUm(-90);
+       meinStift.bewegeUm(40);
+       meinStift.dreheUm(90);
+       meinStift.bewegeUm(5);
+       meinStift.dreheUm(90);
+       meinStift.bewegeUm(40);
+       
+       //Hauptkörper 4
+       meinStift.dreheUm(-90);
+       meinStift.bewegeUm(-98);
+       meinStift.bewegeUm(100);
+       meinStift.dreheUm(90);
+       meinStift.bewegeUm(10);
+       
+       //Räder
+       meinStift.hoch();
+       meinStift.bewegeUm(10);
+       meinStift.dreheUm(90);
+       meinStift.bewegeUm(10);
+       meinStift.runter();
+       meinStift.zeichneKreis(5);
+       meinStift.hoch();
+       meinStift.bewegeUm(80);
+       meinStift.runter();
+       meinStift.zeichneKreis(5);
+       meinStift.hoch();
+       meinStift.dreheUm(180);
+       meinStift.bewegeUm(95);
+       meinStift.dreheUm(-90);
+       meinStift.bewegeUm(10);
+       
+    
+    }
+}
